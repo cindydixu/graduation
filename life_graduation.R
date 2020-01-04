@@ -2,10 +2,6 @@ library(tidyverse)
 library(zoo)
 library(limSolve)
 
-data_select <- read.csv('select_mortality_rates.csv', stringsAsFactors = FALSE)
-data_ultimate <- read.csv('ultimate_mortality_rates.csv', stringsAsFactors = FALSE)
-data_vbt <- read.csv('2015VBT.csv', stringsAsFactors = FALSE)
-
 graduation <- function(data_select, data_ultimate, data_vbt){
   
   data_select <- data_select %>% arrange(INSURED_GENDER, TOBACCO_CLS, POLICY_COVERAGE_YR, INSURED_ISSUE_AGE)
@@ -203,5 +199,3 @@ graduation <- function(data_select, data_ultimate, data_vbt){
   
   data_vbt_graduated
 }
-
-data_vbt_graduated <- graduation(data_select, data_ultimate, data_vbt)
