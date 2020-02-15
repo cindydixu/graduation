@@ -1,0 +1,11 @@
+Package: mortalitytable
+Type: Package
+Title: mortalitytable
+Version: 0.1.0
+Author: Di Xu
+Maintainer: Di Xu <di.xu@unl.edu>
+Description: functions related to constructing mortality table
+License: 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
