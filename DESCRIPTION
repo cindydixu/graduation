@@ -1,6 +1,6 @@
 Package: mortalitytable
 Type: Package
-Title: mortalitytable
+Title: Contruct mortality table
 Version: 0.1.0
 Author: Di Xu
 Maintainer: Di Xu <di.xu@unl.edu>
