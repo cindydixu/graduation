@@ -16,7 +16,7 @@
 wear_off <- function(table, age_basis, gender, tobacco_status, insure_age){
   duration <- 1
   mortality_rate <- c()
-  i <- 1
+  i <- 2
   while (duration <= 26 & insure_age >= 18){
     mortality_rate[i] <- table$mortality_rate[table$age_basis == age_basis & table$gender == gender & table$tobacco_status == tobacco_status & table$insure_age == insure_age & table$duration == duration]
     i <- i + 1
